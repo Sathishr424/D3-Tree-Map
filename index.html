@@ -39,7 +39,7 @@
         flex-direction: column;
         align-items: center;
         background-color: #212529;*/
-        padding: 25px 5px;
+        padding: 5px 5px;
       }.cell:hover{
         stroke-width: 1;
         stroke: black;
@@ -130,7 +130,7 @@
 
         d3.select('#legend').selectAll('*').remove();
 
-        svg = svg.append("svg")
+        svg = svg.append("svg").style("padding","10px 0px")
           .attr("width", width + margin.left + margin.right)
           .attr("height", height + margin.top + margin.bottom)
         .append("g")
